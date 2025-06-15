@@ -293,12 +293,12 @@ export const Dashboard = observer(() => {
 
 
     return(
-        <section className = "h-screen w-screen  flex flex-col overflow-hidden">
+        <section className = "h-screen w-screen min-w-[280px] flex flex-col overflow-hidden">
             <header className = {`flex items-center justify-between sticky top-[0px] left-[0px] w-full py-[12px] ${store.rectangles.length ? "pl-[15px] pr-[25px] max-sm:pl-[8px] max-sm:pr-[15px]" : "px-[25px] max-sm:px-[15px]"} bg-white border-box shadow-md border-box max-420:block`}>
                 <div className = "flex items-center">
                     {store.rectangles.length > 0 && <div className = "w-[32px] h-[32px] mr-[12px] cursor-pointer flex items-center justify-center rounded-[8.5px] text-[22px] hover:bg-[#f7f7f7]" onClick = {()=>handleNavigationMenu()}  ref = {navigationBtn}>{!showNavigationMenu ? <FiMenu/> : <MdMenuOpen/>}</div>}
-                    <h1 className="font-outfit font-extrabold text-[26px] max-sm:text-[22px]">My Canvas</h1>
-                    <div className = "ml-[14px] text-[30px] text-[#ff1e1e] max-sm:text-[28px] max-sm:ml-[10px]"><GiPalette/></div>
+                    <h1 className="font-outfit font-extrabold text-[26px] max-sm:text-[22px] max-330:text-[19px]">My Canvas</h1>
+                    <div className = "ml-[14px] text-[30px] text-[#ff1e1e] max-sm:text-[28px] max-sm:ml-[10px] max-330:text-[24px] max-330:ml-[7px]"><GiPalette/></div>
                 </div>
                 <div className = {`flex items-center max-420:justify-end max-420:mt-[5px] ${showNavigationMenu && "max-720:hidden"}`}>
                     <button type = "button" className = "w-[32px] h-[32px] rounded-[8.5px] flex items-center justify-center border-box border-[1.3px] hover:bg-[#f1f1f1] hover:border-transparent text-[#969696] cursor-pointer mr-[15px]  outline-none" onClick = {()=>handleClear()}><LuEraser/></button>{store.history.length===0} 
@@ -328,7 +328,7 @@ export const Dashboard = observer(() => {
                     }}                    
                 >
                     <div
-                        className="w-[85%] max-h-[95%] max-w-calc-95-4/3 overflow-y-hidden"
+                        className="w-[85%] max-h-[95%] max-w-calc-95-4/3 max-420:calc-95-4/3-mobile overflow-y-hidden"
                     > 
                         <div
                             className = "aspect-[4/3] w-full h-auto bg-white shadow-md rounded-[5px] overflow-hidden"

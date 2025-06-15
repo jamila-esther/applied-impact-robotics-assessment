@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       maxWidth: {
         'calc-95-4/3': 'calc((100vh - 103px) * 4 / 3)',
+        'calc-95-4/3-mobile': 'calc((100vh - 134px) * 4 / 3)',
       },
       fontFamily: {
         outfit: ["'Outfit'", "sans-serif"],
@@ -16,6 +17,7 @@ module.exports = {
       screens: {
         'max-sm': {'max': '600px'}, // custom max-width breakpoint
         'max-420': {'max': '420px'},
+        'max-330': {'max': '330px'},
         'max-720': {'max': '720px'},
       },
       keyframes: {
