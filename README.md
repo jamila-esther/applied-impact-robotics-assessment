@@ -1,11 +1,11 @@
-A full-stack web application with:
+# A full-stack web application with:
 
 ⚛️ React (frontend)
 
 🚀 Node.js + Express (backend)
 
 
-🗂 Folder Structure
+## 🗂 Folder Structure
 
 applied-impact-robotics-assessment/
 
@@ -17,7 +17,7 @@ applied-impact-robotics-assessment/
 
 
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 ✅ Prerequisites
 - Node.js (>=16.x)
@@ -26,7 +26,7 @@ applied-impact-robotics-assessment/
 
 
 
-📥 Installation
+## 📥 Installation
 1. Clone the repo
 - git clone https://github.com/jamila-esther/applied-impact-robotics-assessment.git
 - cd applied-impact-robotics-assessment
@@ -40,7 +40,7 @@ applied-impact-robotics-assessment/
 - npm install
 
 
-🧪 Running the App
+## 🧪 Running the App
 
 ▶️ Start the backend
 - cd backend
