@@ -154,7 +154,7 @@ export const Dashboard = observer(() => {
 
     useEffect(() => {
       const disposer = reaction(
-        ()=> store.rectangles.map(rectangle => ({... rectangle})),
+        ()=> store.rectangles.map(rectangle => ({...rectangle})),
         (newRectangles : RectangleData[]) => {
             if (selectedRectangle && !newRectangles.find(r => r.id === selectedRectangle)) {
                 deSelectRectangle()
@@ -246,6 +246,7 @@ export const Dashboard = observer(() => {
                 previous: previous_data,
                 current: { id: id, x, y }
             })
+            setSelectedRectangle(id)
         }
     }
 
